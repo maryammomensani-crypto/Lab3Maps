@@ -1,9 +1,8 @@
 // The value for 'accessToken' begins with 'pk...'
-mapboxgl.accessToken =
+mapboxgl.accessToken = 
   "pk.eyJ1IjoibWFyeWFtbW9tZW5zYW5pIiwiYSI6ImNta2Nsdm52bzAxdmIzZHM5MWI2b3U0ZjkifQ.fbLuoqkkmVjamidm6wMXew";
 
 const style_2025 = "mapbox://styles/maryammomensani/cmkwmgodo000g01skfj0t670w";
-
 const style_2024 = "mapbox://styles/maryammomensani/cmkwlznsi004v01qqhh3xf6a7";
 
 const map = new mapboxgl.Map({
@@ -19,10 +18,9 @@ const inputs = layerList.getElementsByTagName("input");
 // On click the radio button, toggle the style of the map.
 for (const input of inputs) {
   input.onclick = (layer) => {
-    if (layer.target.id == "style_2025") {
+    if (layer.target.id === "style2025") {  // Fixed: no underscore
       map.setStyle(style_2025);
-    }
-    if (layer.target.id == "style_2024") {
+    } else if (layer.target.id === "style2024") {  // Fixed: else if, no underscore
       map.setStyle(style_2024);
     }
   };
