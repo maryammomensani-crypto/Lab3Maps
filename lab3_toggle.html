@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>GEOG5015_Lab3_E2_Toggle</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <html lang='en'>
-
 <head>
-  <meta charset='utf-8' />
-  <title>Toggle layers</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <!-- Mapbox JS API !-->
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
-  <!-- Mapbox CSS!-->
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>GEOG5015_Lab3_E2_Toggle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Mapbox GL JS CSS -->
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css"
+    rel="stylesheet"
+  />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="lab3_toggle.css" />
 </head>
 
 <body>
-
   <div id="map"></div>
 
-  <!--The menu element contains 2 radio buttons-->
+  <!-- Radio button menu -->
   <div id="menu">
     <h3>Select a month</h3>
 
     <label class="container">
-      <input id="style_2025" type="radio" checked="checked" name="radio">
+      <input
+        id="style2025"
+        type="radio"
+        name="radio"
+        checked="checked"
+      />
       <span class="checkmark"></span>
       Nov 2025
     </label>
 
     <label class="container">
-      <input id="style_2024" type="radio" name="radio">
+      <input
+        id="style2024"
+        type="radio"
+        name="radio"
+      />
       <span class="checkmark"></span>
       Nov 2024
     </label>
   </div>
 
+  <!-- Mapbox GL JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
+
+  <!-- Your JS -->
+  <script src="lab3_toggle.js"></script>
 </body>
-
-</html>
-    <script  src="./script.js"></script>
-
-  </body>
-  
 </html>
